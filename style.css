@@ -1,0 +1,41 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	text-align: center;
+	margin: 1rem;
+}
+
+.container {
+	margin: 3rem;
+}
+
+.card-container, .drop-zone {
+	display: flex;
+	justify-content: center;
+	margin: 1rem;
+}
+
+.card-container {
+	min-height: 100px;
+	background-color: rgb(204, 230, 198);
+}
+
+.card {
+	margin: 1rem;
+}
+
+.drop-zone {
+	min-height: 100px;
+	background-color: #99b593;
+}
+
+@media screen and (max-width: 750px) {
+	.card-container, .drop-zone {
+		flex-direction: column;
+		align-items: center;
+	}
+}
